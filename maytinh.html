@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="user-select: auto;">
+    <input type="number" placeholder="Nhập số thứ nhất" id="1" style="user-select: auto;">
+    <input type="number" placeholder="Nhập số thứ hai" id="2" style="user-select: auto;">
+
+    <button onclick="Cong()">Cộng</button>
+    <button onclick="Tru()">Trừ</button>
+
+    <h2>Result:</h2>
+    <p id="ketqua" style="user-select: auto;"></p>
+
+<script style="user-select: auto;">
+    function Cong() {
+        let a = Number(document.getElementById("1").value);
+        let b = Number(document.getElementById("2").value);
+        let result = a + b;
+       document.getElementById("ketqua").innerHTML = "Kết quá:" + result;
+
+    }
+    function Tru() {
+        let a = Number(document.getElementById("1").value);
+        let b = Number(document.getElementById("2").value);
+        let result = a - b;
+        document.getElementById("ketqua").innerHTML = "Kết quả: " + result;
+
+    }
+</script>
+</body>
+</html>
