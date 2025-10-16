@@ -10,7 +10,8 @@
 
     <button onclick="Cong()">Cộng</button>
     <button onclick="Tru()">Trừ</button>
-
+    <button onclick="Nhan()">Nhân</button>
+    <button onclick="Chia()">Chia</button>
     <h2>Result:</h2>
     <p id="ketqua" style="user-select: auto;"></p>
 
@@ -28,6 +29,18 @@
         let result = a - b;
         document.getElementById("ketqua").innerHTML = "Kết quả: " + result;
 
+    }
+    function Nhan() {
+        let a = Number(document.getElementById("1").value);
+        let b = Number(document.getElementById("2").value);
+        let result = a * b;
+        document.getElementById("ketqua").innerHTML = "Kết quả: " + result;
+    }
+    function Chia() {
+        let a = Number(document.getElementById("1").value);
+        let b = Number(document.getElementById("2").value);
+        let result = a / b;
+        document.getElementById("ketqua").innerHTML = "Kết quả: " + result;
     }
 </script>
 </body>
